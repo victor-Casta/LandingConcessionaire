@@ -2,6 +2,8 @@ const images = [
     '../img/pexels-cesar-perez-733745.jpg',
     '../img/pexels-maria-geller-2127037.jpg',
     '../img/pexels-vlad-alexandru-popa-1402787.jpg',
+    '../img/399622.jpg',
+    '../img/567133.jpg',
 ];
 
 let index = 0;
