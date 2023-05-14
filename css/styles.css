@@ -1,0 +1,129 @@
+:root {
+    --max-Width: 1200px;
+    --min-width: 320px;
+    --accet-color: #e91e63
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-width: var(--min-width);
+    background-image: url('../img/pexels-maria-geller-2127037.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.7s easy-in-out;
+}
+.logo {
+    width: 480px;
+    height: 100px;
+}
+.header, .content, .footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.header {
+    max-width: var(--max-Width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list {
+    margin: 0;
+
+}
+.menu-list__item {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-size:  24px;
+}
+.book-appointment {
+    background-color: var(--accet-color);
+    padding: 1rem 2rem;
+    font-size: 24px;
+}
+
+.content {
+    max-width: var(--max-Width);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.slideBottom {
+    position: absolute;
+    top: 43%;
+    transform: translateY(-150%);
+    font-size: 3rem;
+    cursor: pointer;
+}
+.prevSilde {
+    left: -1.5rem;
+}
+.nextSlide {
+    right: 1.5rem;
+}
+.content__claim {
+    font-size: 64px;
+    color: var(--accet-color);
+    margin: 0;
+}
+.content__subclaim {
+    font-size: 30px;
+    margin: 0.5rem 0;
+    margin-bottom: 2rem;
+}
+
+
+.footer-wrapper {
+    background-color: #000000;
+}
+.footer {
+    max-width: var(--max-Width);
+    display: flex;
+    justify-content: space-between;
+}
+.footer__Widgets {
+    font-size: 24px;
+}
+.footer__widgets__title {
+    color: var(--accet-color);
+    margin: 0 0 1rem 0;
+}
+.footer__widgets__text {
+    margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .header, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu {
+        margin-top: 1.5rem;
+    }
+    .content {
+        align-items: center;
+    }
+    .footer__Widgets {
+        margin-bottom: 1rem;
+    }
+}
